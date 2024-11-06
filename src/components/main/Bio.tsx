@@ -1,0 +1,38 @@
+import React from "react";
+import Image from "next/image";
+
+const Bio: React.FC = () => {
+  return (
+    <article className="flex flex-col-reverse sm:flex-row items-start">
+      <div className="flex flex-col pr-8">
+        <h1 className="mb-1 text-3xl font-bold tracking-tight">양희진</h1>
+        <p className="text-lg font-medium">프론트엔드 개발자</p>
+        <div className="prose prose-neutral dark:prose-invert">
+          <p>
+            클라우드 보안과 Kubernetes에 대한 기초적인 지식을 바탕으로, <br />
+            프론트엔드 개발에서 보안과 확장성을 고려한 균형 잡힌 접근을
+            제공합니다.
+          </p>
+          <p>
+            풀스택 개발 경험을 살려 UI 성능 최적화와 사용자 경험 향상을 목표로
+            합니다.
+          </p>
+        </div>
+      </div>
+      <div className="w-[120px] sm:w-[120px] relative mb-8 sm:mb-0 mr-auto">
+        <Image
+          alt="양희진"
+          src="/static/images/luna_profile_img.png"
+          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5"
+          unoptimized
+          //   sizes="30vw"
+          width={140}
+          height={140}
+          priority
+        />
+      </div>
+    </article>
+  );
+};
+
+export default Bio;

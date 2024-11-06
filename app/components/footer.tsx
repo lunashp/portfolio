@@ -24,30 +24,27 @@ function SocialLink({ href, icon: Icon }) {
 function SocialLinks() {
   return (
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
-      <SocialLink href={socialLinks.twitter} icon={FaXTwitter} />
       <SocialLink href={socialLinks.github} icon={FaGithub} />
-      <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
-      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
-      <a href="/rss.xml" target="_self">
-        <FaRss />
-      </a>
     </div>
   );
 }
 
 export default function Footer() {
   return (
-    <small className="block lg:mt-24 mt-16 text-[#1C1C1C] dark:text-[#D4D4D4]">
-      <time>© {YEAR}</time>{" "}
+    <footer className="block  text-[#1C1C1C] dark:text-[#D4D4D4]">
+      {/* // <footer className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8"> */}
+      <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
+
+      {/* <time>© {YEAR}</time>{" "}
       <a
         className="no-underline"
-        href={socialLinks.twitter}
+        // href={socialLinks.twitter}
         target="_blank"
         rel="noopener noreferrer"
       >
         {metaData.title}
-      </a>
+      </a> */}
       <style jsx>{`
         @media screen and (max-width: 480px) {
           article {
@@ -57,6 +54,6 @@ export default function Footer() {
         }
       `}</style>
       <SocialLinks />
-    </small>
+    </footer>
   );
 }
