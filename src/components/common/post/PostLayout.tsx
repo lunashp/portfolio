@@ -8,7 +8,7 @@ export type PostLayoutType = {
   _id: string;
   slug: string;
   title: string;
-  publishedAt: Date;
+  publishedAt: any;
   readingTime: string;
   project: Project;
 };

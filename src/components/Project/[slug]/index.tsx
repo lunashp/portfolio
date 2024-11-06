@@ -19,7 +19,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ slug }) => {
         _id: project._id,
         slug: project._id,
         title: project.title,
-        publishedAt: new Date(),
+        publishedAt: new Date(project.workEndedAt),
+        // publishedAt: project.workEndedAt,
         readingTime: "5 min read",
         project: project,
       }}

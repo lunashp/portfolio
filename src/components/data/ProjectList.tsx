@@ -37,7 +37,7 @@ export const projects: Project[] = [
     _id: "1",
     slug: "project-1",
     workStartedAt: "2023-05",
-    workEndedAt: "2024-05",
+    workEndedAt: "2024-05-02",
     summary:
       "기업들이 쿠버네티스 클러스터를 신속하게 배포하고 관리할 수 있는 KaaS 서비스 플랫폼입니다.",
     mainImage: "/static/images/project/huevertech.webp",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     _id: "2",
     slug: "project-2",
     workStartedAt: "2022-05",
-    workEndedAt: "2023-04",
+    workEndedAt: "2023-04-30",
     summary:
       "국내 IT 서비스 경쟁력 강화를 목표로, 한국지능정보사회진흥원(NIA)의 지원 아래\n다양한 국내 업체와 협력해 만든 오픈 클라우드 플랫폼입니다.",
     mainImage: "/static/images/project/k-paas.webp",
