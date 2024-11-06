@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import Link from "next/link";
 import Image from "next/image";
-import { Project } from "src/components/main/Projects/ProjectList";
+import { Project } from "src/components/data/ProjectList";
 
 type ExperienceItemProps = {
   data: Project;

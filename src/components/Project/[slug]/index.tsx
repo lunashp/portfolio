@@ -1,6 +1,6 @@
 "use client";
 import PostLayout from "src/components/common/post/PostLayout";
-import { projects } from "src/components/main/Projects/ProjectList";
+import { projects } from "src/components/data/ProjectList";
 
 type ProjectDetailProps = {
   slug: string;

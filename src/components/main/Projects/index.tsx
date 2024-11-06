@@ -1,7 +1,7 @@
 import IconArrow from "app/components/Icons/IconArrow";
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 import Link from "next/link";
-import { projects } from "src/components/main/Projects/ProjectList";
+import { projects } from "src/components/data/ProjectList";
 
 export const metaData: Metadata = {
   title: "Projects",

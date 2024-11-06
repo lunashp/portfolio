@@ -1,4 +1,4 @@
-import { Project } from "src/components/main/Projects/ProjectList";
+import { Project } from "src/components/data/ProjectList";
 import ExperienceItem from "src/components/Project/ExperienceItem";
 
 type ExperienceListProps = {

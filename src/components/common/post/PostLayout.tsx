@@ -2,7 +2,7 @@
 import React, { Suspense } from "react";
 import Image from "next/image";
 import dayjs from "dayjs";
-import { Project } from "src/components/main/Projects/ProjectList";
+import { Project } from "src/components/data/ProjectList";
 
 export type PostLayoutType = {
   _id: string;

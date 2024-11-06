@@ -1,4 +1,4 @@
-import { projects } from "src/components/main/Projects/ProjectList";
+import { projects } from "src/components/data/ProjectList";
 import ExperienceList from "src/components/Project/ExperienceList";
 import ExperienceSkeletion from "src/components/Project/ExperienceSkeletion";
 
