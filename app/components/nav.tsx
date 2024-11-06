@@ -19,7 +19,7 @@ export function Navbar() {
   return (
     <nav className="lg:mb-8 mb-6 py-0 mt-4">
       <div className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-4 pb-4 sm:pb-8 text-gray-900 bg-gray-50  dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
-        <div className="ml-[-0.60rem]">
+        <div className="ml-[-0.60rem] flex gap-4 sm:gap-0">
           {Object.entries(navItems).map(([path, { name }]) => (
             <Link
               key={path}
