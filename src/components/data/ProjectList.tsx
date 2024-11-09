@@ -32,7 +32,6 @@ export const projects: Project[] = [
       "FE & BE 기술 온보딩 세션을 도입하여 다양한 기술을 학습하고 공유하며 개발 품질을 향상",
       "개발자 간 k8s 관련 기술 공유",
     ],
-    // url: "https://example.com/",
     position: "Full Stack",
     _id: "1",
     slug: "project-1",
@@ -59,7 +58,6 @@ export const projects: Project[] = [
       "플랫폼 호환성 및 확장성 검사 리드 (다양한 서비스 UI 경험 및 타사와의 협업 미팅 주도)",
       "협력사 네트워크 환경 구축 지원",
     ],
-    // url: "https://example.com/",
     position: "Cloud Engineer",
     _id: "2",
     slug: "project-2",
@@ -72,13 +70,4 @@ export const projects: Project[] = [
     subSkill: "Git / Kubernates / Python",
     rank: "정직원 전임",
   },
-  // {
-  //   title: "Project Three",
-  //   startedAt: 2023,
-  //   endedAt: 2023,
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-  //   url: "https://example.com/",
-  //   position: "Full Stack",
-  // },
 ];
