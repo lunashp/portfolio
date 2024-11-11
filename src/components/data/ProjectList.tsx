@@ -26,11 +26,10 @@ export const projects: Project[] = [
     startedAt: "2023.05.",
     endedAt: "2024.05.",
     description: [
-      "MSW를 도입하여 Frontend 선도개발 프로세스 확립 및 선행 개발 진행으로 개발 시간 단축",
+      "MSW를 도입하여 Frontend 선도개발 프로세스 확립 및 선행 개발 진행으로 프로젝트 일정 관리에 기여",
       "Go API를 활용한 카탈로그 데이터 수집",
       "프로젝트를 위한 Go 기반 CRUD 템플릿 생성",
-      "FE & BE 기술 온보딩 세션을 도입하여 다양한 기술을 학습하고 공유하며 개발 품질을 향상",
-      "개발자 간 k8s 관련 기술 공유",
+      "FE & BE 기술 온보딩 세션을 도입하여 다양한 기술을 학습하고 공유하며 팀 기술 역량 강화",
     ],
     position: "Full Stack",
     _id: "1",
