@@ -31,10 +31,16 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ slug }) => {
 
       <pre className="border border-gray-300 dark:border-gray-700 rounded-lg p-4 bg-transparent dark:bg-black">
         <code className="text-gray-900 dark:text-gray-100">
-          <span className="code-line">
-            근무처: {`${project.company} · ${project.rank}`}
-          </span>
-          <br />
+          {/* project.company가 있으면 아래 코드를 표시 */}
+          {project.company && (
+            <>
+              <span className="code-line">
+                근무처: {`${project.company} · ${project.rank}`}
+              </span>
+              <br />
+            </>
+          )}
+
           <span className="code-line">{`${project.position} - ${project.workStartedAt} ~ ${project.workEndedAt}`}</span>
         </code>
       </pre>
@@ -48,6 +54,14 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ slug }) => {
       <ul>
         {project.description.map((desc, index) => (
           <li key={index}>{desc}</li>
+        ))}
+      </ul>
+      <h2>회고</h2>
+      <hr />
+      <ul>
+        {/* {project.recall.map((rc, index) => ( */}
+        {project.recall.map((rc, index) => (
+          <li key={index}>{rc}</li>
         ))}
       </ul>
     </PostLayout>
