@@ -1,4 +1,4 @@
-import ProjectDetail from "src/components/Project/[slug]";
+import ProjectDetail from "../../components/features/project-detail/[slug]/index";
 
 export type PageProps = {
   params?: any;

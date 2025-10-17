@@ -1,13 +1,13 @@
-import "./global.css";
+import "./components/shared/ui/global.css";
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-import { Navbar } from "./components/nav";
+import { Navbar } from "./components/shared/ui/nav";
+import Footer from "./components/shared/ui/footer";
+import { ThemeProvider } from "./components/shared/ui/theme-switch";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Footer from "./components/footer";
-import { ThemeProvider } from "./components/theme-switch";
-import { metaData } from "./config";
+import { metaData } from "./components/shared/config/config";
 
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
