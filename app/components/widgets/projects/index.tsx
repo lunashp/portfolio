@@ -2,22 +2,22 @@
 import IconArrow from "../../shared/ui/Icons/IconArrow";
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 import Link from "next/link";
-import { projects } from "../../entities/project/ProjectList";
+import {
+  companies,
+  getProfessionalProjects,
+  getSideProjects,
+} from "../../entities/project/ProjectList";
 
 export const metaData: Metadata = {
   title: "Projects",
   description: "My Projects",
 };
 
-// Professional Experience: company가 있는 프로젝트
-const professionalProjects = projects.filter(
-  (project) => project?.company && project.company !== ""
-);
+// Professional Experience: 회사별로 그룹화된 프로젝트
+const professionalProjects = getProfessionalProjects();
 
-// Experience: company가 없는 사이드 프로젝트
-const sideProjects = projects.filter(
-  (project) => !project?.company || project.company === ""
-);
+// Experience: 사이드 프로젝트
+const sideProjects = getSideProjects();
 
 const Projects: React.FC = () => {
   return (
@@ -49,20 +49,6 @@ const Projects: React.FC = () => {
                     {project?.position}
                   </p>
                 </div>
-                {/* <ul className="ml-4">
-                  {project.description.map((desc, index) => (
-                    <li key={index} className="relative mt-2">
-                      <div className="absolute left-[-12px] top-2 w-1 h-1 bg-black dark:bg-white rounded-full" />
-                      <div
-                        className={`description-item description-item-${index}`}
-                      >
-                        <p className="text-gray-500 dark:text-gray-300">
-                          {desc}
-                        </p>
-                      </div>
-                    </li>
-                  ))}
-                </ul> */}
                 <ul className="ml-4">
                   {project.description.slice(0, 3).map((desc, index) => (
                     <li key={index} className="relative mt-2">

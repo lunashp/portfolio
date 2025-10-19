@@ -17,6 +17,8 @@ import IconStyled from "../../shared/ui/Icons/logo/IconStyled";
 import IconTailwind from "../../shared/ui/Icons/logo/IconTailwind";
 import IconTypescript from "../../shared/ui/Icons/logo/IconTypescript";
 import IconGolang from "../../shared/ui/Icons/logo/IconGolang";
+import IconDocker from "../../shared/ui/Icons/logo/IconDocker";
+import IconJenkins from "../../shared/ui/Icons/logo/IconJenkins";
 import SkillIcon from "./SkillIcon";
 
 const Skills: React.FC = () => {
@@ -32,13 +34,16 @@ const Skills: React.FC = () => {
             Recently Used Technologies
           </h3>
           <div className="flex gap-4 flex-wrap mt-4">
-            <SkillIcon icon={<IconNextjs />} text="Next JS" />
             <SkillIcon icon={<IconReact />} text="React" />
+            <SkillIcon icon={<IconNextjs />} text="Next JS" />
             <SkillIcon icon={<IconTypescript />} text="Typescript" />
             <SkillIcon icon={<IconJavascript />} text="Javascript" />
-            <SkillIcon icon={<IconReactQuery />} text="React Query" />
+            <SkillIcon icon={<IconReactQuery />} text="Tanstack(React) Query" />
             <SkillIcon icon={<IconStyled />} text="Styled Component" />
+            <SkillIcon icon={<IconTailwind />} text="Tailwind CSS" />
             <SkillIcon icon={<IconMui />} text="Material UI" />
+            <SkillIcon icon={<IconDocker />} text="Docker" />
+            <SkillIcon icon={<IconJenkins />} text="Jenkins" />
           </div>
         </div>
         <div className="w-full">
@@ -46,12 +51,12 @@ const Skills: React.FC = () => {
             Previously Used Technologies
           </h3>
           <div className="flex gap-4 flex-wrap mt-4">
-            <SkillIcon icon={<IconTailwind />} text="Tailwind CSS" />
             <SkillIcon icon={<IconAws />} text="Aws" />
             <SkillIcon icon={<IconAzure />} text="Azure" />
             <SkillIcon icon={<IconGcp />} text="GCP" />
             <SkillIcon icon={<IconOpenstack />} text="Openstack" />
             <SkillIcon icon={<IconKubernetes />} text="Kubernetes" />
+
             <SkillIcon icon={<IconGolang />} text="Go" />
             {/* <SkillIcon icon={<IconPython />} text="Python" /> */}
 

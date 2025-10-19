@@ -1,12 +1,13 @@
 "use client";
 import PostLayout from "../../../shared/ui/PostLayout";
-import { projects } from "../../../entities/project/ProjectList";
+import { getAllProjects } from "../../../entities/project/ProjectList";
 
 type ProjectDetailProps = {
   slug: string;
 };
 
 const ProjectDetail: React.FC<ProjectDetailProps> = ({ slug }) => {
+  const projects = getAllProjects();
   const project = projects.find((project) => project._id === slug);
 
   if (!project) {
