@@ -21,6 +21,11 @@ import IconDocker from "../../shared/ui/Icons/logo/IconDocker";
 import IconJenkins from "../../shared/ui/Icons/logo/IconJenkins";
 import SkillIcon from "./SkillIcon";
 
+/**
+ * Skills 위젯 컴포넌트
+ * 최근 사용 기술과 이전에 사용한 기술을 카테고리별로 표시
+ * @returns {JSX.Element} Skills 위젯 컴포넌트
+ */
 const Skills: React.FC = () => {
   return (
     <article className="flex flex-col w-full">

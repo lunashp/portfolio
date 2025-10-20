@@ -1,6 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
+/**
+ * About 페이지 컴포넌트
+ * 개인 정보, 연락처, 교육 이력 등을 표시하는 페이지
+ * @returns {JSX.Element} About 페이지 컴포넌트
+ */
 const AboutPage = () => {
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-12 w-full">

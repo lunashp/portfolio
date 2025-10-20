@@ -1,14 +1,40 @@
 "use client";
 import PostLayout from "../../../shared/ui/PostLayout";
 import { getAllProjects } from "../../../entities/project/ProjectList";
+import DetailSkeleton from "./DetailSkeleton";
+import { useState, useEffect } from "react";
 
 type ProjectDetailProps = {
   slug: string;
 };
 
+/**
+ * 프로젝트 상세 페이지 컴포넌트
+ * URL slug를 기반으로 특정 프로젝트의 상세 정보를 표시
+ * 로딩 상태 관리 및 스켈레톤 UI 제공
+ * @param {ProjectDetailProps} props - 컴포넌트 props
+ * @param {string} props.slug - 프로젝트 식별자
+ * @returns {JSX.Element} 프로젝트 상세 페이지 컴포넌트
+ */
 const ProjectDetail: React.FC<ProjectDetailProps> = ({ slug }) => {
-  const projects = getAllProjects();
-  const project = projects.find((project) => project._id === slug);
+  const [isLoading, setIsLoading] = useState(true);
+  const [project, setProject] = useState<any>(null);
+
+  useEffect(() => {
+    // 실제 환경에서는 API 호출 시간을 시뮬레이션
+    const timer = setTimeout(() => {
+      const projects = getAllProjects();
+      const foundProject = projects.find((p) => p._id === slug);
+      setProject(foundProject);
+      setIsLoading(false);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, [slug]);
+
+  if (isLoading) {
+    return <DetailSkeleton />;
+  }
 
   if (!project) {
     return <p>Project not found</p>;

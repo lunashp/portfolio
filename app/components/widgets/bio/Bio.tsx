@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
+/**
+ * Bio 위젯 컴포넌트
+ * 개인 소개, 프로필 이미지, 자기소개를 포함한 소개 섹션
+ * @returns {JSX.Element} Bio 위젯 컴포넌트
+ */
 const Bio: React.FC = () => {
   return (
     <article className="flex flex-col-reverse sm:flex-row items-start">

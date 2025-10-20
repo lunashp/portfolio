@@ -198,6 +198,12 @@ export const companies: Company[] = [
 ];
 
 // 기존 호환성을 위한 헬퍼 함수들
+
+/**
+ * 모든 프로젝트를 가져오는 함수
+ * 회사 프로젝트와 사이드 프로젝트를 합쳐서 반환
+ * @returns {Project[]} 모든 프로젝트 배열
+ */
 export const getAllProjects = (): Project[] => {
   const professionalProjects = companies.flatMap((company) =>
     company.projects.map((project) => ({
@@ -213,6 +219,11 @@ export const getAllProjects = (): Project[] => {
   return [...professionalProjects, ...sideProjects];
 };
 
+/**
+ * 회사 프로젝트만 가져오는 함수
+ * 회사에서 진행한 프로젝트들만 필터링하여 반환
+ * @returns {Project[]} 회사 프로젝트 배열
+ */
 export const getProfessionalProjects = (): Project[] => {
   return companies.flatMap((company) =>
     company.projects.map((project) => ({
@@ -224,6 +235,11 @@ export const getProfessionalProjects = (): Project[] => {
   );
 };
 
+/**
+ * 사이드 프로젝트만 가져오는 함수
+ * 개인적으로 진행한 프로젝트들만 반환
+ * @returns {Project[]} 사이드 프로젝트 배열
+ */
 export const getSideProjects = (): Project[] => {
   return [
     {
