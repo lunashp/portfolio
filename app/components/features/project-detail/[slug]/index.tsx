@@ -58,8 +58,8 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ slug }) => {
 
       <pre className="border border-gray-300 dark:border-gray-700 rounded-lg p-4 bg-transparent dark:bg-black">
         <code className="text-gray-900 dark:text-gray-100">
-          {/* project.company가 있으면 아래 코드를 표시 */}
-          {project.company && (
+          {/* 회사 프로젝트인 경우에만 회사 정보 표시 */}
+          {project.company && project.rank && (
             <>
               <span className="code-line">
                 근무처: {`${project.company} · ${project.rank}`}
@@ -68,7 +68,18 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ slug }) => {
             </>
           )}
 
-          <span className="code-line">{`${project.position} - ${project.workStartedAt} ~ ${project.workEndedAt}`}</span>
+          {/* 사이드 프로젝트인 경우 프로젝트 타입 표시 */}
+          {!project.company && (
+            <>
+              <span className="code-line">개인 프로젝트</span>
+              <br />
+            </>
+          )}
+
+          <span className="code-line">
+            {project.position ? `${project.position} - ` : "개발 기간: "}
+            {project.workStartedAt} ~ {project.workEndedAt}
+          </span>
         </code>
       </pre>
 

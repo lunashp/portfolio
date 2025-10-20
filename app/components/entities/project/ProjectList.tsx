@@ -247,6 +247,7 @@ export const getSideProjects = (): Project[] => {
       subtitle: "",
       startedAt: "2024.11.",
       endedAt: "2025.01.",
+      position: "Frontend Developer",
       description: [
         "2차 리팩토링 단계에서 프론트엔드 개발자로 프로젝트에 합류하여 UI/UX 개선 및 주요 기능 개발 주도",
         "프론트엔드 팀 리드로서 코드 리뷰 프로세스 정립, 개발 가이드라인 수립 및 협업 주도",
@@ -279,6 +280,7 @@ export const getSideProjects = (): Project[] => {
       subtitle: "",
       startedAt: "2024.05.",
       endedAt: "2024.08.",
+      position: "Full Stack Developer",
       description: [
         "사용자가 작성한 고민을 랜덤한 3명의 사용자에게 익명으로 전달하고, 답변을 받을 수 있는 서비스 기획 및 개발",
         "프로젝트 전반 기획 및 요구사항 정의, UI/UX 설계, 주요 기능 흐름 정의",
