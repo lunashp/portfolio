@@ -67,54 +67,6 @@ app/
 └── content/             # 콘텐츠 파일
 ```
 
-## 🚀 시작하기
-
-### 필수 요구사항
-
-- Node.js 18.0.0 이상
-- npm 또는 yarn
-
-### 설치 및 실행
-
-1. **저장소 클론**
-
-```bash
-git clone https://github.com/your-username/portfolio.git
-cd portfolio
-```
-
-2. **의존성 설치**
-
-```bash
-npm install
-# 또는
-yarn install
-```
-
-3. **개발 서버 실행**
-
-```bash
-npm run dev
-# 또는
-yarn dev
-```
-
-4. **브라우저에서 확인**
-
-```
-http://localhost:3000
-```
-
-### 빌드 및 배포
-
-```bash
-# 프로덕션 빌드
-npm run build
-
-# 프로덕션 서버 실행
-npm run start
-```
-
 ## 📱 페이지 구성
 
 ### 🏠 홈페이지 (`/`)
@@ -194,7 +146,7 @@ npm run start
 이 프로젝트는 Vercel을 통해 배포됩니다:
 
 - **자동 배포**: GitHub 푸시 시 자동 배포
-- **도메인**: [lunapor.vercel.app](https://lunapor.vercel.app)
+- **도메인**: [lunashp.vercel.app](https://portfolio-lunashp.vercel.app)
 - **CDN**: 글로벌 CDN을 통한 빠른 로딩
 
 ## 📝 라이선스
@@ -206,6 +158,6 @@ npm run start
 - **이메일**: hijnshp@gmail.com
 - **GitHub**: [@lunashp](https://github.com/lunashp)
 - **블로그**: [velog.io/@lunashp](https://velog.io/@lunashp)
-- **웹사이트**: [lunapor.vercel.app](https://lunapor.vercel.app)
+- **웹사이트**: [lunashp.vercel.app](https://portfolio-lunashp.vercel.app)
 
 ---
