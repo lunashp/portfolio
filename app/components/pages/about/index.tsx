@@ -28,8 +28,8 @@ const AboutPage = () => {
           </li>
           <li>
             Website:{" "}
-            <Link href="https://lunapor.vercel.app">
-              https://lunapor.vercel.app
+            <Link href="https://portfolio-lunashp.vercel.app">
+            https://portfolio-lunashp.vercel.app
             </Link>
           </li>
           <li>
