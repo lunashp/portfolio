@@ -14,9 +14,9 @@ const Bio: React.FC = () => {
         <p className="text-lg font-medium">프론트엔드 개발자</p>
         <div className="prose prose-neutral dark:prose-invert">
           <p>
-            클라우드 보안과 Kubernetes에 대한 기초적인 지식을 바탕으로, <br />
-            프론트엔드 개발에서 보안과 확장성을 고려한 균형 잡힌 접근을
-            제공합니다.
+            클라우드 엔지니어와 풀스택 개발 경험을 바탕으로, <br />
+            현재는 프론트엔드에 집중하며 안정적이고 확장 가능한 서비스를 <br />
+            구현하고 있습니다.
           </p>
           <p>
             풀스택 개발 경험을 살려 UI 성능 최적화와 사용자 경험 향상을 목표로
